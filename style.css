@@ -36,6 +36,7 @@ span {
         display: flex;
         align-items: center;
         background-color: var(--brand-primary-primary-100, #FEF3EB);
+        padding: 10px 10px;
     }
     .row {
         gap: 12px;
