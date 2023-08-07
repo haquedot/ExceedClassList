@@ -30,18 +30,18 @@ p {
 }
 
 .class-content-1 {
-    color: var(--brand-primary-primary-600, #F18234);
+    color: #F18234;
 }
 
 span {
-    color: var(--brand-emphasis-medium-emphasis, #707070);
+    color: #707070;
 }
 
 @media (max-width: 768px) {
     .class-content-1 {
         display: flex;
         align-items: center;
-        background-color: var(--brand-primary-primary-100, #FEF3EB);
+        background-color: #FEF3EB;
         padding: 10px 10px;
         margin-bottom: 8px;
     }
