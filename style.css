@@ -2,6 +2,10 @@ h6 {
     color: #F18234;
 }
 
+p {
+    margin: 0;
+}
+
 .btnSubmit {
     background-color: #F18234;
     color: white;
@@ -15,6 +19,8 @@ h6 {
 }
 
 .class-content {
+    display: inline-flex;
+    align-items: center;
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -37,6 +43,7 @@ span {
         align-items: center;
         background-color: var(--brand-primary-primary-100, #FEF3EB);
         padding: 10px 10px;
+        margin-bottom: 8px;
     }
     .row {
         gap: 12px;
