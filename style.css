@@ -1,0 +1,43 @@
+h6 {
+    color: #F18234;
+}
+
+.btnSubmit {
+    background-color: #F18234;
+    color: white;
+    font-family: Poppins;
+    padding: 12px 32px;
+}
+
+.btnSubmit:hover {
+    background-color: #ce7230;
+    color: white;
+}
+
+.class-content {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+
+.class-content-1 {
+    color: var(--brand-primary-primary-600, #F18234);
+}
+
+span {
+    color: var(--brand-emphasis-medium-emphasis, #707070);
+}
+
+@media (max-width: 768px) {
+    .class-content-1 {
+        display: flex;
+        align-items: center;
+        background-color: var(--brand-primary-primary-100, #FEF3EB);
+    }
+    .row {
+        gap: 12px;
+    }
+}
