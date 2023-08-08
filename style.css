@@ -6,14 +6,15 @@ p {
     margin: 0;
 }
 
-.btnSubmit {
+.btn-primary {
     background-color: #F18234;
     color: white;
     font-family: Poppins;
     padding: 12px 32px;
+    border: none;
 }
 
-.btnSubmit:hover {
+.btn-primary:hover {
     background-color: #ce7230;
     color: white;
 }
