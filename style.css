@@ -6,7 +6,7 @@ p {
     margin: 0;
 }
 
-.btn-primary {
+.btn {
     background-color: #F18234;
     color: white;
     font-family: Poppins;
@@ -14,7 +14,7 @@ p {
     border: none;
 }
 
-.btn-primary:hover {
+.btn:hover {
     background-color: #ce7230;
     color: white;
 }
