@@ -62,13 +62,17 @@ span {
     font-size: 16px;
 }
 
+.remove-div {
+    display: flex;
+    align-items: flex-end;
+}
+
 .remove {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EBF6FE;
     border-radius: 8px;
-    height: 79px;
 }
 
 .add {
