@@ -6,7 +6,7 @@ p {
     margin: 0;
 }
 
-.btn {
+.btn-primary {
     background-color: #F18234;
     color: white;
     font-family: Poppins;
@@ -14,7 +14,7 @@ p {
     border: none;
 }
 
-.btn:hover {
+.btn-primary:hover {
     background-color: #ce7230;
     color: white;
 }
@@ -36,6 +36,45 @@ p {
 
 span {
     color: #707070;
+}
+
+.collapse {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000069;
+    /* transition: none; */
+}
+
+.std {
+    width: 80%;
+    margin: auto;
+    /* z-index: 1; */
+}
+
+.card {
+    display: block;
+    /* width: 50%; */
+    margin: auto;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBF6FE;
+    border-radius: 8px;
+    height: 79px;
+}
+
+.add {
+    color: #34A2F1;
+    border: none;
+    background: none;
 }
 
 @media (max-width: 992px) {
