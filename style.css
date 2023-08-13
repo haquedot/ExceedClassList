@@ -13,9 +13,10 @@ p {
     margin: 0;
 }
 
-.container {
+
+/* .container {
     max-width: 1672px;
-}
+} */
 
 .btn-primary {
     background-color: #F18234;
@@ -125,5 +126,8 @@ span {
         display: flex;
         align-items: center;
         justify-content: right;
+    }
+    .btn-primary {
+        width: 100%;
     }
 }
