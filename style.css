@@ -43,6 +43,10 @@ p {
     letter-spacing: 0.14px;
 }
 
+.border-grey {
+    border: 1px solid #707070 !important;
+}
+
 .row {
     margin-bottom: 9px;
 }
