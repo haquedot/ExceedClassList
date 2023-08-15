@@ -65,6 +65,10 @@ p {
     max-width: 80%;
 }
 
+.modal-content {
+    border-radius: 8px;
+}
+
 .modal-footer {
     border-top: none;
 }
