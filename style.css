@@ -47,6 +47,10 @@ p {
     padding-right: 30px;
 }
 
+.input-div .remove {
+    display: none;
+}
+
 .row {
     --bs-gutter-x: 0;
 }
@@ -210,12 +214,33 @@ span {
     .modal-dialog {
         max-width: 100%;
     }
+    .student-2 {
+        display: none;
+    }
     h6 {
         font-size: 16px;
         margin-bottom: 14px;
     }
     .input-div {
         padding-right: 0;
+    }
+    .birth-remove {
+        width: 100%;
+        display: flex;
+    }
+    .input-div .birth {
+        width: 90%;
+        display: flex;
+    }
+    .input-div .remove {
+        width: 48px;
+        height: 48px;
+        margin-left: 16px;
+        padding: 12px;
+        display: flex;
+    }
+    .input-div .remove i {
+        padding: 0;
     }
     .class-content-1 {
         display: flex;

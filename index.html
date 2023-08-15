@@ -35,7 +35,7 @@
                 <div class="modal-body row m-0 py-0">
                     <!-- <div class=""> -->
                     <div class="row col-lg-11 m-0">
-                        <div class="row m-0">
+                        <div class="row student-1 m-0">
                             <div class="col-lg-4 input-div input-div">
                                 <label for="firstName" class="">First name</label>
                                 <input type="email" class="form-control " placeholder="Test" id="firstName">
@@ -44,12 +44,21 @@
                                 <label for="firstName" class="">Last name</label>
                                 <input type="email" class="form-control " placeholder="One" id="firstName">
                             </div>
-                            <div class="col-lg-4 input-div">
+                            <div class="col-lg-4 input-div ">
                                 <label for="firstName" class="">Date of birth</label>
-                                <input type="date" class="form-control " placeholder="22 Sep 2000" id="firstName">
+                                <div class="birth-remove">
+                                    <div class="birth">
+                                        <input type="date" class="form-control " placeholder="22 Sep 2000" id="firstName">
+                                    </div>
+                                    <div class="container-fluid remove">
+                                        <div class="d-block">
+                                            <i class="bi bi-trash"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row m-0">
+                        <div class="row student-2 m-0">
                             <div class="col-lg-4 input-div">
                                 <label for="firstName" class="">First name</label>
                                 <input type="email" class="form-control " placeholder="Test" id="firstName">
@@ -84,57 +93,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="collapse " id="demo">
-        <div class="std">
-            <div class="card card-body">
-                <p class="pb-3 ps-1">Student Details</p>
-                <div class="row">
-                    <div class="row col-lg-10">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="firstName" class=" p-1">First name</label>
-                                <input type="email" class="form-control mb-2" placeholder="Test" id="firstName">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="firstName" class=" p-1">Last name</label>
-                                <input type="email" class="form-control mb-2" placeholder="One" id="firstName">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="firstName" class=" p-1">Date of birth</label>
-                                <input type="date" class="form-control mb-2" placeholder="22 Sep 2000" id="firstName">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="firstName" class=" p-1">First name</label>
-                                <input type="email" class="form-control mb-2" placeholder="Test" id="firstName">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="firstName" class=" p-1">Last name</label>
-                                <input type="email" class="form-control mb-2" placeholder="One" id="firstName">
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="firstName" class=" p-1">Date of birth</label>
-                                <input type="date" class="form-control mb-2" placeholder="22 Sep 2000" id="firstName">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid col-lg-2 remove-div p-0">
-                        <div class="container-fluid remove p-4">
-                            <p>Remove</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="container mt-3" align="right">
-                        <button class="add">+ Add Student</button>
-                        <button type="submit" class="btn-primary rounded">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="container">
         <h6 class="px-1">Class List</h6>
         <div class="row border border-grey rounded mx-1 p-0">
