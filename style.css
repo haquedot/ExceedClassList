@@ -67,7 +67,8 @@ span {
 }
 
 .classList-head {
-
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
