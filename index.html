@@ -12,9 +12,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
@@ -31,7 +28,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header p-3 pb-0  border-0">
-                    <h5 class="modal-title fw-semibold" id="exampleModalLongTitle">Student’s Details</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Student’s Details</h5>
                     <button type="button" class="close  border-0 bg-transparent" data-dismiss="modal"
                         aria-label="Close">
                         <i class="bi bi-x-lg"></i>
@@ -64,7 +61,8 @@
                         <div class="">
                             <label for="firstName" class="">Date of birth</label>
                             <div class="d-flex">
-                                <input type="date" class="form-control" placeholder="22 Sep 2000" id="firstName" style="width:90%;">
+                                <input type="date" class="form-control" placeholder="22 Sep 2000" id="firstName"
+                                    style="width:90%;">
                                 <button class="remove-button ms-2">
                                     <i class="bi bi-trash"></i>
                                 </button>
@@ -80,6 +78,7 @@
             </div>
         </div>
     </div>
+
     <nav class="navbar navbar-expand-lg bg-white border-bottom w-100">
         <div class="container">
             <div class="d-flex align-content-center">
@@ -145,122 +144,57 @@
             </div>
         </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-lg  border-bottom w-100">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.svg" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse offcanvas offcanvas-start" id="navbarScroll">
-                <ul class="navbar-nav justify-content-center w-100"
-                    style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Camps</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Others
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                </ul>
-                <form class="d-flex align-items-center">
-                    <a class="position-relative bi bi-bag me-2">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            9
-                            <span class="visually-hidden">unread messages</span>
-                        </span>
-                    </a>
-                    <button class="m-2">
-                        Parent Login
-                    </button>
-                    <button>
-                        Free Trial Class
-                    </button>
-                </form>
-            </div>
-        </div>
-    </nav> -->
+
+    <div class="container py-5" id="classList">
+        <h6 class="px-1">Class List</h6>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Course</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Fee</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MIS- Discovery Age 7 & 8 SATURDAYS <br class="d-none d-lg-block" /> 11:00AM ND23-01-DSC
+                        1-Nov-Dec 2023</td>
+                    <td data-label="Minimum Age">8 years old</td>
+                    <td data-label="Date">Nov 4, 2023 - Jan 6, 2024</td>
+                    <td data-label="Time">Saturday @ 11:00AM-12:00PM</td>
+                    <td data-label="Tution Fee">$380</td>
+                    <td data-label=""><button type="button" class="btn-primary rounded" data-toggle="modal"
+                            data-target="#addCart">Add to cart</button></td>
+                </tr>
+                <tr>
+                    <td>MIS- Discovery Age 7 & 8 SATURDAYS <br class="d-none d-lg-block" /> 11:00AM ND23-01-DSC
+                        1-Nov-Dec 2023</td>
+                    <td data-label="Minimum Age">8 years old</td>
+                    <td data-label="Date">Sep 6, 2023 - Oct 25, 2023</td>
+                    <td data-label="Time">Wednesday @ 4:30-5:30PM</td>
+                    <td data-label="Tution Fee">$380</td>
+                    <td><button type="button" class="btn-primary rounded" data-toggle="modal" data-target="#addCart">Add
+                            to cart</button></td>
+                </tr>
+                <tr>
+                    <td>MIS- Discovery Age 7 & 8 SATURDAYS <br class="d-none d-lg-block" /> 11:00AM ND23-01-DSC
+                        1-Nov-Dec 2023</td>
+                    <td data-label="Minimum Age">8 years old</td>
+                    <td data-label="Date">Sep 2, 2023 - Oct 28, 2023</td>
+                    <td data-label="Time">Saturday @ 10:00-11:00AM</td>
+                    <td data-label="Tution Fee">$380</td>
+                    <td><button type="button" class="btn-primary rounded" data-toggle="modal" data-target="#addCart">Add
+                            to cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
-    <!-- 
-    <nav class="navbar navbar-expand-lg bg-white border-bottom w-100">
-        <div class="container">
-            <div class="d-flex align-content-center">
-                <a class="" href="#">
-                    <img src="images/logo.svg" alt="logo">
-                </a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header">
-                    <a class="" href="#">
-                        <img src="images/logo.png" alt="logo">
-                    </a>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-
-                <ul class="navbar-nav px-3 justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#room">Room</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="d-flex ps-3">
-                    <button class="border-1 border-dark border-opacity-10 rounded bg-transparent px-2"
-                        type="submit">
-                        <i class="bi bi-cart" style="color:#2596be"></i>
-                    </button>
-                    <button class="custom-btn" type="submit">Login</button>
-                </div>
-            </div>
-        </div>
-    </nav> -->
-
-    <div class="container">
+    <!-- <div class="container">
         <h6 class="px-1">Class List</h6>
         <div class="row hide-mob thead mb-3 fw-bolder">
             <div class="p-3 col-lg-3">
@@ -357,153 +291,169 @@
             </div>
         </div>
 
-    </div>
-    <footer class="">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-3">
-                    <img src="images/footerLogo.svg" alt=" " class="w-50">
-                    <div class="d-flex align-items-center my-5">
+    </div> -->
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <img src="images/footerLogo.svg" alt="TheEvenet" width="50%">
+                        <br /><br />
                         <p class="text-white">
-                            Afterschool, Camps and Competition programs
-                            in Robotics, Coding and Artificial Intelligence
-                            for kids ages 7-17
+                            Afterschool, Camps and Competition Programs in Robotics, Coding and Artificial Intelligence
+                            for kids aged 7-17
+                        </p>
+                        <br /><br />
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/exceedrobotics"
+                                class="facebook text-decoration-none text-white" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/exceedrobotics" class="twitter text-decoration-none text-white"
+                                target="_blank">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/exceed_robotics/"
+                                class="instagram text-decoration-none text-white" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/exceed-robotics/mycompany/" target="_blank"
+                                class="linkedin text-decoration-none text-white">
+                                <i class="bi bi-linkedin "></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links center-text">
+                        <h4 style="padding-bottom:0px;color:#F58838;">Locations</h4>
+                        <h6 style="padding-bottom:10px;">Mississauga</h6>
+                        <p class="text-white">
+                            3055 Argentia Road,Bldg B2<br />
+                            Mississauga, ON L5N 8E1<br />
+                            mis@exceedrobotics.com <br />
+                        </p>
+                        <br />
+                        <h6 style="padding-bottom:10px;">Richmond Hill</h6>
+                        <p class="text-white">
+                            10909 Yonge St, Unit 4,<br />
+                            Richmond Hill, ON L4C 3E3 <br />
+                            rmh@exceedrobotics.com <br />
+
+                        </p>
+                        <br />
+                        <h6 style="padding-bottom:10px;">Thornhill</h6>
+                        <p class="text-white">
+                            248 Steeles Ave W,Unit 6<br />
+                            Thornhill, ON L4J 1A1<br />
+                            tho@exceedrobotics.com <br />
+
                         </p>
                     </div>
 
-                    <div class="d-flex align-items-center mb-5 border p-2 rounded">
-                        <a href="www.facebook.com">
-                            <img src="images/facebook.svg" alt="">
-                        </a>
-<!--                         <a href="www.instagram.com" class="">
-                            <i class="bi bi-instagram"></i>
-                        </a> -->
-
-                    </div>
-                </div>
-                <div class="d-blck col-md-3 location">
-                    <div class="d-block mb-4">
-                        <h6 class="orange m-0">
-                            LOCATIONS
-                        </h6>
-                        <h5 class="text-white m-0">
-                            Mississauga
-                        </h5>
-                        <h6 class="text-white text-decoration-none fs-6 m-0">
-                            3055 Argentia Road,Bldg B2
-                            Mississauga ON, L5N 8E1
-                        </h6>
-                        <p class="text-white text-decoration-none fs-6 ">
-                            mis@exceedrobotics.com
-                        </p>
-                    </div>
-                    <div class="d-block my-4">
-                        <h5 class="text-white m-0">
-                            Richmond Hill
-                        </h5>
-                        <h6 class="text-white text-decoration-none fs-6 m-0">
-                            10909 Yonge St,Unit 4
-                            Richmond Hill ON, L4C 3E3
-                        </h6>
-                        <p class="text-white text-decoration-none fs-6 ">
-                            rmh@exceedrobotics.com
-                        </p>
-                    </div>
-                    <div class="d-block my-4">
-                        <h5 class="text-white m-0">
-                            Thornhill
-                        </h5>
-                        <h6 class="text-white text-decoration-none fs-6 m-0">
-                            248 Steeles Ave W,Unit 6
-                            Thornhill ON,L4J 1A1
-                        </h6>
-                        <p class="text-white text-decoration-none fs-6 ">
-                            tho@exceedrobotics.com
-                        </p>
-                    </div>
-                </div>
-                <div class="d-blck col-md-3">
-                    <div class="d-block">
-                        <h6 class="orange">
-                            PROGRAMS
-                        </h6>
-                        <p class="text-white">
-                            Robotics (in Centre)
-                        </p>
-                        <p class="text-white">
-                            Python & Artificial <br>
-                            Intelligence (in Centre)
-                        </p>
-                        <p class="text-white">
-                            Python Game
-                            &<br>
-                            Programming (Virtual)
-                        </p>
-                    </div>
-                    <div class="d-block mt-5">
-                        <h6 class="orange">
-                            CAMPS
-                        </h6>
-                        <p class="text-white">
-                            Summer Camps
-                        </p>
-                        <p class="text-white">
-                            March Break<br>
-                            Camps
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 ">
-                    <div class="d-block">
-                        <h6 class="orange">
-                            COMPANY
-                        </h6>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4 style="color:#F58838">PROGRAMS</h4>
                         <ul class="list-unstyled">
-                            <li>
-                                <a href="#" class="text-decoration-none text-white">
-                                    About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none text-white">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none text-white">
-                                    FAQ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none text-white">
-                                    Article
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none text-white">
-                                    Google Reviews
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none text-white">
-                                    Book a FREE Class
-                                </a>
-                            </li>
+                            <li><a href="https://demo.exceedrobotics.com/robotics/"
+                                    class="text-decoration-none text-white">Robotics(in Center)</a></li>
+                            <li><a href="https://demo.exceedrobotics.com/python-ai/"
+                                    class="text-decoration-none text-white">Python and Artificial <br /> Intelligence
+                                    (in Center)</a></li>
+                            <li><a href="https://demo.exceedrobotics.com/ 
+    python-gaming/" class="text-decoration-none text-white">Python Game <br />Programming (Virtual)</a></li>
+                            <!--
+                  <li><a href="https://demo.exceedrobotics.com/alumni/">Alumni Workshop (in Center)</a></li>-->
+
+                        </ul>
+                        <br /><br />
+                        <h4 style="color:#F58838">CAMPS</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="https://demo.exceedrobotics.com/summer-camp/"
+                                    class="text-decoration-none text-white">Summer Camps</a></li>
+                            <!--<li><a href="https://demo.exceedrobotics.com/exceed-camp-winter/">Winter Camps</a></li>-->
+                            <li><a href="https://demo.exceedrobotics.com/winter-camp/"
+                                    class="text-decoration-none text-white">Winter Camps</a></li>
+                            <!--<li><a href="https://demo.exceedrobotics.com/exceed-camp-one-day/">PA Days</a></li>-->
+
                         </ul>
                     </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4 style="color:#F58838">COMPANY</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="https://demo.exceedrobotics.com/about/"
+                                    class="text-decoration-none text-white">About us</a></li>
+                            <li><a href="https://demo.exceedrobotics.com/contact/"
+                                    class="text-decoration-none text-white">Contact Us</a></li>
+
+                            <li> <a href="#faq" class="text-decoration-none text-white">FAQ's</a> </li>
+                            <li><a href="https://demo.exceedrobotics.com/article/"
+                                    class="text-decoration-none text-white">Articles</a></li>
+                            <li> <a href="#google-review" class="text-decoration-none text-white">Google Reviews</a>
+                            </li>
+                            <li><a href="https://demo.exceedrobotics.com/program/"
+                                    class="text-decoration-none text-white">Book a FREE Class</a></li>
+                            <!--<li><a href="#student-review">Students Stories</a></li>
+                 
+                  <li><a href="#instructor">Exceed Instructors</a></li>
+                  <li><a href="#">Semester dates</a></li>-->
+                            <!--<div id="newsletter" style="display: none;">
+                      <p style="font-style: italic;margin-top:20px;margin-bottom:10px">Get updates to your inbox</p>
+                      <button type="button" style="background-color: #F18234;border:none;padding:5px 10px;color:#fff;border-radius: 10px;">SIGN UP NEWSLETTER</button>
+                  </div>-->
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 20px;display: none;">
+            <div class="row">
+                <div class="col-lg-6">
+                    Privacy Policy
+                </div>
+                <div class="col-lg-6" style="text-align:right">
+                    &copy; 2022, Exceed Robotics. All rights recived.
+                </div>
+            </div>
+        </div>
+        <!-- <style>
+            .footer-new-bottom {
+                background: linear-gradient(270deg, #122438 0%, #f58634 100%);
+                color: #fff;
+            }
+
+            .right-res {
+                text-align: right;
+            }
+
+            @media only screen and (max-width: 767px) {
+                .right-res {
+                    text-align: left;
+                }
+            }
+        </style> -->
+        <div class="copyright mt-3">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7">
+                        <a href="https://demo.exceedrobotics.com/privacy-policy/"
+                            class="text-decoration-none text-white">
+                            <p class="fw-bolder">
+                                Privacy Policy
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-5 ">
+                        <p class="text-end text-white">&#169; 2023 , Exceed Robotics, All rights
+                            recived.</p>
+                    </div>
                 </div>
             </div>
 
-        </div>
-        <div class="copyright py-3">
-            <div class="container">
-                <p class="float-start text-white fw-bolder">
-                    Privacy<br>Policy
-                </p>
-                <p class="float-end">
-                    <i class="bi bi-c-circle"></i> 2022, Exceed Robotics. All rights recived.
-                </p>
-            </div>
         </div>
     </footer>
 

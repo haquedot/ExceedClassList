@@ -53,7 +53,8 @@ span {
     align-items: center;
     flex-shrink: 0;
 }
-.remove-button{
+
+.remove-button {
     background-color: #EBF6FE;
     color: #FC0D1B;
     border: none;
@@ -120,9 +121,11 @@ span {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
-.badge{
+
+.badge {
     background-color: #F18234;
 }
+
 .thead {
     margin-bottom: 18px;
     background-color: #EBF6FE;
@@ -233,6 +236,164 @@ footer button {
     background-image: linear-gradient(to right, #F58634 0%, #122438 100%);
 }
 
+.center-text {
+    text-align: center;
+}
+
+#classList table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#classList table thead tr {
+    background-color: #EBF6FE;
+    border-radius: 8px;
+    border-style: hidden;
+}
+
+#classList thead tr th {
+    background-color: #EBF6FE;
+    padding: 14px 12px;
+    margin-bottom: 18px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+#classList thead tr th:first-child {
+    border-radius: 8px 0px 0px 8px;
+}
+
+#classList thead tr th:last-child {
+    border-radius: 8px 8px 8px 0px;
+}
+
+#classList tbody tr td {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ddd;
+    padding: 14px 12px;
+    border-style: hidden;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+
+}
+
+#classList tbody tr {
+    /* background-color: #EBF6FE; */
+
+    margin-bottom: 18px;
+}
+
+#classList tbody tr th {
+    /* background-color: #EBF6FE; */
+}
+
+#classList tbody tr td:first-child {
+    color: #ED702D;
+}
+
+#classList table th,
+#classList table td {
+    text-align: left;
+}
+
+#classList table tr {
+    background-color: #EBF6FE;
+    margin-bottom: 18px;
+    border-radius: 8px;
+}
+
+#classList tbody tr td:last-child {
+    text-align: center;
+}
+
+#classList button {
+    background-color: #FF7F3F;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+@media (max-width: 992px) {
+    #classList table {
+        border: 0;
+    }
+
+    #classList thead {
+        display: none;
+    }
+
+    #classList table tr {
+        border: 0.5px solid #707070;
+        display: block;
+        margin-bottom: 18px;
+        border-radius: 8px;
+    }
+
+    #classList table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    #classList table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 12px;
+        font-weight: bold;
+        text-align: left;
+        color: #707070;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.14px;
+    }
+
+    #classList table td:last-child {
+        border-bottom: 0;
+
+    }
+
+    #classList tbody tr th {
+        background-color: #FEF3EB;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    #classList button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #classList tbody tr td:first-child {
+        background-color: #FEF3EB;
+        color: #ED702D;
+        border-radius: 8px 8px 0px 0px;
+        text-align: start;
+    }
+
+    #classList tbody tr td:last-child {
+        border-radius: 0px 0px 8px 8px;
+        padding-top: 0px;
+    }
+}
+
+
 @media (max-width: 992px) {
     .offcanvas {
         flex-direction: column;
@@ -305,6 +466,10 @@ footer button {
     }
 
     .location {
+        text-align: left;
+    }
+
+    .center-text {
         text-align: left;
     }
 }
