@@ -247,8 +247,8 @@ footer button {
 
 #classList table thead tr {
     background-color: #EBF6FE;
-    border-radius: 8px;
     border-style: hidden;
+    border-bottom: 18px solid #ffffff;
 }
 
 #classList thead tr th {
@@ -272,11 +272,10 @@ footer button {
     border-radius: 8px 8px 8px 0px;
 }
 
+
 #classList tbody tr td {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #ddd;
+    background-color: #EBF6FE;
     padding: 14px 12px;
-    border-style: hidden;
     color: #000;
     font-family: Poppins;
     font-size: 14px;
@@ -284,18 +283,8 @@ footer button {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.14px;
-
 }
 
-#classList tbody tr {
-    /* background-color: #EBF6FE; */
-
-    margin-bottom: 18px;
-}
-
-#classList tbody tr th {
-    /* background-color: #EBF6FE; */
-}
 
 #classList tbody tr td:first-child {
     color: #ED702D;
@@ -309,18 +298,19 @@ footer button {
 #classList table tr {
     background-color: #EBF6FE;
     margin-bottom: 18px;
-    border-radius: 8px;
+    border-bottom: 18px solid #ffffff;
 }
 
 #classList tbody tr td:last-child {
     text-align: center;
 }
 
-#classList button {
-    background-color: #FF7F3F;
-    color: white;
-    border: none;
-    padding: 8px 16px;
+#classList .table>tbody {
+    vertical-align: middle;
+}
+
+#classList .tution-fee {
+    color: #F18234;
 }
 
 @media (max-width: 992px) {
@@ -340,12 +330,16 @@ footer button {
     }
 
     #classList table td {
-        border-bottom: 1px solid #ddd;
         display: block;
         font-size: .8em;
         text-align: right;
+        border-style: hidden;
         padding-left: 50%;
         position: relative;
+    }
+
+    #classList tbody tr td {
+        background-color: #FFFFFF;
     }
 
     #classList table td::before {
